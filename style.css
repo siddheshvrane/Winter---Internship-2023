@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url(https://rare-gallery.com/mocahbig/420113-Windows-10-colorful-minimalism-simple-simple-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#lnav{
+    width: 5%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.275);
+    backdrop-filter: blur(10px);
+}
+#right{
+    width: 95%;
+    height: 100%;
+}
+#rnav{
+    width: 100%;
+    height: 75px;
+}
+#crypto-cards{
+    width: 100%;
+    height: 250px;
+    padding: 25px;
+}
+.cards{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.275);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: black;
+    display: inline-block;
+    margin: 10px;
+
+}
