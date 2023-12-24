@@ -8,13 +8,12 @@
 html,body{
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 #main{
     width: 100%;
     height: 100%;
     display: flex;
-    background-image: url(https://rare-gallery.com/mocahbig/420113-Windows-10-colorful-minimalism-simple-simple-background.png);
+    background-image: url(https://media.istockphoto.com/id/1273929462/photo/purple-defocused-blurred-motion-abstract-background.webp?b=1&s=170667a&w=0&k=20&c=YbaYi00O7A07AVuFpvSH1-VjcVg37HduYExjsXW2ESM=);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -23,6 +22,8 @@ html,body{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.275);
     backdrop-filter: blur(10px);
+    border-right: 2px solid rgba(225, 225, 225, 0.1);
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.3));
 }
 #right{
     width: 95%;
@@ -38,7 +39,7 @@ html,body{
     padding: 25px;
 }
 .cards{
-    width: 300px;
+    width: 317px;
     height: 200px;
     background-color: rgba(255, 255, 255, 0.275);
     border-radius: 15px;
@@ -46,5 +47,35 @@ html,body{
     color: black;
     display: inline-block;
     margin: 10px;
-
+    border: 2px solid rgba(225, 225, 225, 0.1);
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.2));
+}
+#analytics{
+    width: 100%;
+    height: 370px;
+    padding: 0 25px 0 25px;
+}
+#graph{
+    width: 1000px;
+    height: 335px;
+    background-color: rgba(255, 255, 255, 0.275);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid rgba(225, 225, 225, 0.1);
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.3));
+}
+#piechart{
+    width: 348px;
+    height: 335px;
+    background-color: rgba(255, 255, 255, 0.275);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid rgba(225, 225, 225, 0.1);
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.3));
 }
