@@ -115,6 +115,10 @@ h2{
     color: rgba(255, 255, 255, 0.5);
     transition: 0.5s;
 }
+.nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
 .nav:hover{
     scale: 1.05;
 }
