@@ -15,7 +15,7 @@ const Coins = (props) => {
 
         {props.coins.map(coins => {
                 return (
-                    <CoinItem coins={coins} />
+                    <CoinItem coins={coins} key = {coins.id} />
                 )
         })}
         </div>
