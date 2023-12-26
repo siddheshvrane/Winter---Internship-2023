@@ -1,52 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import Coins from './components/Coins.js'
 
 function App() {
-  return (
-    <div id="main">
-        <div id="lnav">
-            <div class="nav">
-                <a href="*"><i class="ri-home-5-line"></i></a>
-            </div>
-            <div class="nav">
-                <a href="*"><i class="ri-article-line"></i></a>
-            </div>
-            <div class="nav">
-                <a href="*"><i class="ri-settings-3-line"></i></a>
-            </div>
-        </div>
-        <div id="right">
-            <div id="rnav">
-                <div class="h-nav">
-                <i class="ri-arrow-left-s-line"></i>
-                </div>
-                <div class="h-nav">
-                    <i class="ri-user-line"></i>
-                </div>
-            </div>
-            <div id="crypto-cards">
-                <div class="cards">
-                   <h2>Bitcoin</h2> 
-                </div>
-                <div class="cards">
-                    <h2>Ethereum</h2>
-                    
-                </div>
-                <div class="cards">
-                    <h2>Dogecoin</h2>
-                </div>
-                <div class="cards">
-                    <h2>Tether</h2>
-                </div>
-            </div>
-            <div id="analytics">
-            <div id="graph">
-            </div>
-            <div id="piechart"></div>
-        </div>
-        </div>
-    </div>
-  );
+
+    const [coins, setCoins] = useState([])
+
+    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=10&page=1&sparkline=false&locale=en'
+    useEffect(() => {
+        axios.get(url).then((response) => { 
+            setCoins(response.data)
+            console.log(response.data[0])
+        }).catch((error) => {
+            console.log(error)
+        }) 
+    }, []);
+
+    return (
+        <>
+        <Coins coins={coins}/>
+        </>
+    );
 }
 
 export default App;
